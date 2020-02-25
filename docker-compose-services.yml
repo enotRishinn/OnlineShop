@@ -1,0 +1,18 @@
+version: '3'
+services:
+  orders:
+    build: ./orders-application
+    ports:
+      - "9001:9001"
+  payments:
+    build: ./payments-application
+    ports:
+      - "9002:9002"
+  items:
+    build: ./items-application
+    ports:
+      - "9000:9000"
+  gateway:
+    build: ./api-gateway-application
+    ports:
+      - "8080:8080"

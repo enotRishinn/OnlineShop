@@ -1,0 +1,15 @@
+version: '3'
+services:
+  zookeeper:
+    build: ./zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    build: ./kafka
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+  eureka:
+    build: ./eureka
+    ports:
+      - "8769:8769"

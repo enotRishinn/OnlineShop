@@ -1,0 +1,12 @@
+# Project exclude paths
+/api-gateway-application/.gradle/
+/eurika-service-discovery/.gradle/
+/items-application/.gradle/
+/items-application/build/
+/items-application/build/classes/java/main/
+/orders-application/.gradle/
+/orders-application/build/
+/orders-application/build/classes/java/main/
+/payments-application/.gradle/
+/payments-application/build/
+/payments-application/build/classes/java/main/

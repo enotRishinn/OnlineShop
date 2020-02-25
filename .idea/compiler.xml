@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="api-gateway-application.main" target="1.8" />
+      <module name="api-gateway-application.test" target="1.8" />
+      <module name="com.microservices.eureka-application.main" target="1.8" />
+      <module name="com.microservices.eureka-application.test" target="1.8" />
+      <module name="com.microservices.eurika-service-discovery.main" target="1.8" />
+      <module name="com.microservices.eurika-service-discovery.test" target="1.8" />
+      <module name="eureka-application.main" target="1.8" />
+      <module name="eureka-application.test" target="1.8" />
+      <module name="eureka-service-discovery.eurika-service-discovery.main" target="1.8" />
+      <module name="eureka-service-discovery.eurika-service-discovery.test" target="1.8" />
+      <module name="eurika-service-discovery.main" target="1.8" />
+      <module name="eurika-service-discovery.test" target="1.8" />
+      <module name="items-application.main" target="1.8" />
+      <module name="items-application.test" target="1.8" />
+      <module name="Jully.online-shop.api-gateway-application.main" target="1.8" />
+      <module name="Jully.online-shop.api-gateway-application.test" target="1.8" />
+      <module name="Jully.online-shop.items-application.main" target="1.8" />
+      <module name="Jully.online-shop.items-application.test" target="1.8" />
+      <module name="Jully.online-shop.orders-application.main" target="1.8" />
+      <module name="Jully.online-shop.orders-application.test" target="1.8" />
+      <module name="Jully.online-shop.payments-application.main" target="1.8" />
+      <module name="Jully.online-shop.payments-application.test" target="1.8" />
+      <module name="online-shop.api-gateway-application.main" target="1.8" />
+      <module name="online-shop.api-gateway-application.test" target="1.8" />
+      <module name="online-shop.items-application.main" target="1.8" />
+      <module name="online-shop.items-application.test" target="1.8" />
+      <module name="online-shop.orders-application.main" target="1.8" />
+      <module name="online-shop.orders-application.test" target="1.8" />
+      <module name="online-shop.payments-application.main" target="1.8" />
+      <module name="online-shop.payments-application.test" target="1.8" />
+      <module name="orders-application.main" target="1.8" />
+      <module name="orders-application.test" target="1.8" />
+      <module name="payments-application.main" target="1.8" />
+      <module name="payments-application.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

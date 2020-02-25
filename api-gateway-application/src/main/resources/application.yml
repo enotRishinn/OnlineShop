@@ -1,0 +1,38 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    status-page-url: http://api-gateway-service/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8769/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+
+zuul:
+  routes:
+    orders:
+      path: /orders/**
+      serviceId: orders-service
+      strip-prefix: false
+    warehouse:
+      path: /warehouse/**
+      serviceId: items-service
+      strip-prefix: false
+    payments:
+      path: /payments/**
+      serviceId: payments-service
+      strip-prefix: false
+    orderpaid:
+      path: /api/orderpaid/**
+      serviceId: api-gateway-service
+      strip-prefix: false
+

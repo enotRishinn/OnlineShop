@@ -1,0 +1,20 @@
+server:
+  port: 8769
+
+#Eureka properties
+eureka:
+  #Eureka setting for other service run outside the docker-container
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8769/eureka/
+
+---
+
+eureka:
+  instance:
+    hostname: eureka
+

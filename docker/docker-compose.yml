@@ -1,0 +1,47 @@
+version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    hostname: kafka
+    links:
+      - zookeeper
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=kafka
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_CREATE_TOPICS="orders:1:1,items:1:1"
+      - KAFKA_ADVERTISED_PORT=9092
+  db:
+    build: ./sql
+    ports:
+      - "3306:3306"
+    hostname: sql
+    environment:
+      - MYSQL_HOST=sql
+      - MYSQL_ROOT_PASSWORD=1234
+      - TZ=UTC
+  eureka:
+    build: ./eureka
+    ports:
+      - "8761:8761"
+  warehouse:
+    build: ./items
+    ports:
+      - "9001:9001"
+  orders:
+    build: ./orders
+    ports:
+      - "9000:9000"
+  payments:
+    build: ./payments
+    ports:
+      - "9002:9002"
+  api-gateway:
+    build: ./gateway
+    ports:
+      - "8080:8080"
